@@ -4,3 +4,6 @@
 [submodule "article"]
 	path = article
 	url = git@github.com:martisak/article.git
+[submodule "kth_thesis"]
+	path = kth_thesis
+	url = https://github.com/martisak/kth_thesis
