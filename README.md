@@ -3,6 +3,8 @@
 [![license](https://img.shields.io/badge/license-CC%20BY%20SA%203.0-blue.svg)](https://github.com/martisak/reproducibleresearch#licensing)
 [![GitHub contributors](https://img.shields.io/github/contributors/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/graphs/contributors)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/pulls?q=is%3Apr+is%3Aclosed)
+![docker pulls](https://img.shields.io/docker/pulls/martisak/reproducibleresearch.svg) ![docker stars](https://img.shields.io/docker/stars/martisak/reproducibleresearch.svg) [![](https://images.microbadger.com/badges/image/martisak/reproducibleresearch.svg)](https://microbadger.com/images/martisak/reproducibleresearch "martisak/reproducibleresearch image metadata")
+
 
 A Docker container for building documents.
 
