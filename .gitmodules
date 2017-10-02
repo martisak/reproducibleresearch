@@ -7,3 +7,6 @@
 [submodule "kth_thesis"]
 	path = kth_thesis
 	url = https://github.com/martisak/kth_thesis.git
+[submodule "kthcolors"]
+	path = kthcolors
+	url = https://github.com/KTH-AC/kthcolors

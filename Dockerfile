@@ -10,6 +10,7 @@ RUN apt-get update && \
         apt-transport-https \
         texlive-publishers \
         texlive-math-extra \
+        texlive-lang-european \
         ttf-adf-gillius && \
     add-apt-repository multiverse && \
     apt-get update
@@ -24,3 +25,17 @@ RUN pip install pandoc-eqnos \
         pandoc-fignos
 
 COPY . /usr/local/
+
+USER $NB_USER
+
+ENV TEXMFHOME=/home/$NB_USER/texmf
+
+RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
+	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthesis.tar.gz && \
+	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthsym.tar.gz && \
+  	tar xvzf kthesis.tar.gz -C $TEXMFHOME && \
+  	tar xvzf kthsym.tar.gz -C $TEXMFHOME && \
+  	wget https://raw.githubusercontent.com/karlkurzer/path_planner_tex/master/KTHEEtitlepage.sty -P $TEXMFHOME/tex/latex/kth/ && \
+  	wget https://github.com/karlkurzer/path_planner_tex/raw/master/kth_logo.pdf -P $TEXMFHOME/tex/generic/kthsym
+
+COPY kthcolors/lib/kthcolors.sty $TEXMFHOME/tex/latex/kth/
