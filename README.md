@@ -1,5 +1,6 @@
 # Reproducible Research Document build container
 
+[![Build Status](https://travis-ci.org/martisak/reproducibleresearch.svg?branch=master)](https://travis-ci.org/martisak/reproducibleresearch) [![DOI](https://zenodo.org/badge/78309405.svg)](https://zenodo.org/badge/latestdoi/78309405)
 [![license](https://img.shields.io/badge/license-CC%20BY%20SA%203.0-blue.svg)](https://github.com/martisak/reproducibleresearch#licensing)
 [![GitHub contributors](https://img.shields.io/github/contributors/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/graphs/contributors)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/pulls?q=is%3Apr+is%3Aclosed)
@@ -45,6 +46,15 @@ For more information, check out [CitationStyles.org](http://citationstyles.org/)
 ### Classic article template
 
 [Classic article template](https://github.com/martisak/article) is a LaTeX/pandoc theme using [ClassicThesis](https://ctan.org/tex-archive/macros/latex/contrib/classicthesis?lang=en) and [arsclassica](https://www.ctan.org/pkg/arsclassica).
+
+## KTH Templates
+
+See [LaTeX och TeX på NADA](http://system.csc.kth.se/misc/tex/) for more information.
+
+* [KTH Thesis Template](ftp://ftp.nada.kth.se/pub/tex/local/kthesis.tar.gz)
+* [KTH Symbol](ftp://ftp.nada.kth.se/pub/tex/local/kthsym.tar.gz)
+* [KTH Colorscheme for LaTeX](https://github.com/KTH-AC/kthcolors)
+* [Titlepage](https://svn.kwarc.info/repos/arXMLiv/trunk/sty/KTHEEtitlepage.sty)
 
 ## Licensing
 
