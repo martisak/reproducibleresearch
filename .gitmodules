@@ -1,0 +1,6 @@
+[submodule "styles"]
+	path = styles
+	url = git@github.com:citation-style-language/styles.git
+[submodule "article"]
+	path = article
+	url = git@github.com:martisak/article.git
