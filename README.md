@@ -1,4 +1,4 @@
-# Reproducible Research
+# Reproducible Research Document build container
 
 [![license](https://img.shields.io/badge/license-CC%20BY%20SA%203.0-blue.svg)](https://github.com/martisak/reproducibleresearch#licensing)
 [![GitHub contributors](https://img.shields.io/github/contributors/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/graphs/contributors)
@@ -13,7 +13,7 @@ A Docker container for building documents.
 ### Pull image
 
 ```
-docker pull 
+docker pull martisak/reproducibleresearch
 ```
 
 ### Setup bash
@@ -21,7 +21,7 @@ docker pull
 Add this to your bash profile
 
 ```
-render() { docker run -it -v`pwd`:/data martisak make -C /data $@; }
+render() { docker run -it -v`pwd`:/data martisak/reproducibleresearch make -C /data $@; }
 ```
 
 ### Render
