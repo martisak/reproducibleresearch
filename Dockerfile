@@ -22,7 +22,8 @@ RUN wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_xtd_
     fc-cache
 
 RUN pip install pandoc-eqnos \
-        pandoc-fignos
+        pandoc-fignos \
+        pandoc-shortcaption
 
 COPY . /usr/local/
 

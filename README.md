@@ -21,7 +21,7 @@ docker pull martisak/reproducibleresearch
 Add this to your bash profile
 
 ```
-render() { docker run -it -v`pwd`:/data martisak/reproducibleresearch make -C /data $@; }
+render() { docker run --rm -it -v`pwd`:/data martisak/reproducibleresearch make -C /data $@; }
 ```
 
 ### Render
