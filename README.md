@@ -1,11 +1,10 @@
 # Reproducible Research Document build container
 
-[![Build Status](https://travis-ci.org/martisak/reproducibleresearch.svg?branch=master)](https://travis-ci.org/martisak/reproducibleresearch) [![DOI](https://zenodo.org/badge/78309405.svg)](https://zenodo.org/badge/latestdoi/78309405)
+[![Build Status](https://travis-ci.org/martisak/reproducibleresearch.svg?branch=master)](https://travis-ci.org/martisak/reproducibleresearch) [![DOI](https://zenodo.org/badge/105559302.svg)](https://zenodo.org/badge/latestdoi/105559302)
 [![license](https://img.shields.io/badge/license-CC%20BY%20SA%203.0-blue.svg)](https://github.com/martisak/reproducibleresearch#licensing)
 [![GitHub contributors](https://img.shields.io/github/contributors/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/graphs/contributors)
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/martisak/reproducible.svg)](https://github.com/martisak/reproducibleresearch/pulls?q=is%3Apr+is%3Aclosed)
 ![docker pulls](https://img.shields.io/docker/pulls/martisak/reproducibleresearch.svg) ![docker stars](https://img.shields.io/docker/stars/martisak/reproducibleresearch.svg) [![](https://images.microbadger.com/badges/image/martisak/reproducibleresearch.svg)](https://microbadger.com/images/martisak/reproducibleresearch "martisak/reproducibleresearch image metadata")
-
 
 A Docker container for building documents.
 
@@ -47,7 +46,7 @@ For more information, check out [CitationStyles.org](http://citationstyles.org/)
 
 [Classic article template](https://github.com/martisak/article) is a LaTeX/pandoc theme using [ClassicThesis](https://ctan.org/tex-archive/macros/latex/contrib/classicthesis?lang=en) and [arsclassica](https://www.ctan.org/pkg/arsclassica).
 
-## KTH Templates
+### KTH Templates
 
 See [LaTeX och TeX på NADA](http://system.csc.kth.se/misc/tex/) for more information.
 
@@ -59,4 +58,24 @@ See [LaTeX och TeX på NADA](http://system.csc.kth.se/misc/tex/) for more inform
 ## Licensing
 
 All the styles in this repository are released under the [Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/). For attribution, any software using this repository must include a clear mention of the project and a link.
+
+## Citing this work
+
+Please use the following citation.
+
+~~~
+@misc{martin_isaksson_2017_1001074,
+  author       = {Martin Isaksson},
+  title        = {{martisak/reproducibleresearch: Initial test 
+                   release}},
+  month        = oct,
+  year         = 2017,
+  doi          = {10.5281/zenodo.1001074},
+  url          = {https://doi.org/10.5281/zenodo.1001074}
+}
+~~~
+
+## Contributing
+
+I encourage you to help me out with this project. Please fork and submit pull requests. Thank you!
 
