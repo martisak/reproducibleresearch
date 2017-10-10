@@ -11,7 +11,8 @@ RUN apt-get update && \
         texlive-publishers \
         texlive-math-extra \
         texlive-lang-european \
-        ttf-adf-gillius && \
+        ttf-adf-gillius \
+        plantuml && \
     add-apt-repository multiverse && \
     apt-get update
 
@@ -23,7 +24,8 @@ RUN wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_xtd_
 
 RUN pip install pandoc-eqnos \
         pandoc-fignos \
-        pandoc-shortcaption
+        pandoc-shortcaption \
+        iplantuml
 
 COPY . /usr/local/
 
