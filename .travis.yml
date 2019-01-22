@@ -9,7 +9,7 @@ services:
 
 before_script:
   - sleep 5
-  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - export REPO=$DOCKER_USER/reproducibleresearch
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
   - echo $REPO:$TAG:$COMMIT
