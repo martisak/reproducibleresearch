@@ -5,31 +5,38 @@ USER root
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt install -y \
+    apt-get install -y \
         software-properties-common \
         apt-transport-https \
         texlive-publishers \
-        texlive-math-extra \
+        texlive-science \
         texlive-lang-european \
         ttf-adf-gillius \
-        plantuml && \
+        tex-gyre \
+        plantuml \
+        python-pip && \
     add-apt-repository multiverse && \
     apt-get update
 
-RUN wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_xtd_i486-linux.tar.bz2 && \
+RUN cd /tmp && \
+    mkdir -p /usr/share/fonts/opentype && \
+    wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_xtd_i486-linux.tar.bz2 && \
     tar xvjf FontPack910_xtd_i486-linux.tar.bz2 && \
     tar xvf xtdfont/XTDFONT.TAR && \
     mv Adobe/Reader9/Resource/Font/*.otf /usr/share/fonts/opentype && \
-    fc-cache
+    fc-cache && \
+    cd
 
-RUN pip install pandoc-eqnos \
+RUN pip install pandoc-xnos \
+        pandoc-eqnos \
         pandoc-fignos \
         pandoc-shortcaption \
-        iplantuml
+        iplantuml \
+        pweave
 
 COPY . /usr/local/
 
-USER $NB_USER
+USER root
 
 ENV TEXMFHOME=/home/$NB_USER/texmf
 
