@@ -20,7 +20,7 @@ RUN apt-get update && \
 
 RUN cd /tmp && \
     mkdir -p /usr/share/fonts/opentype && \
-    wget ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_xtd_i486-linux.tar.bz2 && \
+    wget http://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/FontPack910_xtd_i486-linux.tar.bz2 && \
     tar xvjf FontPack910_xtd_i486-linux.tar.bz2 && \
     tar xvf xtdfont/XTDFONT.TAR && \
     mv Adobe/Reader9/Resource/Font/*.otf /usr/share/fonts/opentype && \
