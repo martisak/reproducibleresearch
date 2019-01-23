@@ -7,3 +7,6 @@
 [submodule "kthcolors"]
 	path = kthcolors
 	url = https://github.com/KTH-AC/kthcolors
+[submodule "styles"]
+	path = styles
+	url = https://github.com/citation-style-language/styles.git
