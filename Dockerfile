@@ -42,7 +42,7 @@ ENV TEXMFHOME=/home/$NB_USER/texmf
 
 RUN mkdir -p $TEXMFHOME/tex/latex/tikzuml/ && \
     wget http://perso.ensta-paristech.fr/~kielbasi/tikzuml/var/files/src/tikzuml-v1.0-2016-03-29.tbz && \
-    tar xvzf tikzuml-v1.0-2016-03-29.tbz && \
+    tar xvjf tikzuml-v1.0-2016-03-29.tbz && \
     mv tikzuml-v1.0-2016-03-29/tikz-uml.sty $TEXMFHOME/tex/latex/tikzuml/
 
 RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
