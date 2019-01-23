@@ -3,7 +3,7 @@ node_js:
   - '4'
 
 git:
-  depth: false
+  depth: 50
 
 sudo: required
 
