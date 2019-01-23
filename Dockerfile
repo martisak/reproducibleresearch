@@ -40,6 +40,11 @@ USER root
 
 ENV TEXMFHOME=/home/$NB_USER/texmf
 
+RUN mkdir -p $TEXMFHOME/tex/latex/tikzuml/ && \
+    wget http://perso.ensta-paristech.fr/~kielbasi/tikzuml/var/files/src/tikzuml-v1.0-2016-03-29.tbz && \
+    tar xvzf tikzuml-v1.0-2016-03-29.tbz && \
+    mv tikzuml-v1.0-2016-03-29/tikz-uml.sty $TEXMFHOME/tex/latex/tikzuml/
+
 RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthesis.tar.gz && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthsym.tar.gz && \
