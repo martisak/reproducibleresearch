@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - '4'
 
+git:
+  submodules: false
+
 sudo: required
 
 services:
@@ -9,6 +12,7 @@ services:
 
 before_script:
   - sleep 5
+  - git submodule update --init --recursive
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - export REPO=$DOCKER_USER/reproducibleresearch
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "latest"; else echo $TRAVIS_BRANCH ; fi`
