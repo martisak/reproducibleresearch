@@ -27,6 +27,9 @@ RUN cd /tmp && \
     fc-cache && \
     cd
 
+# Downgrade pandoc
+RUN conda install --yes pandoc=2.4
+
 RUN pip install pandoc-xnos \
         pandoc-eqnos \
         pandoc-fignos \
