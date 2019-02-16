@@ -12,6 +12,7 @@ RUN apt-get update && \
         texlive-science \
         texlive-lang-european \
         ttf-adf-gillius \
+        fonts-linuxlibertine \
         tex-gyre \
         plantuml \
         python-pip && \
@@ -55,6 +56,15 @@ RUN mkdir -p $TEXMFHOME/tex/latex/neurips_2018/ && \
 ## Install ICML template
 RUN mkdir -p $TEXMFHOME/tex/latex/icml_2019/ && \
     mv /usr/local/pandoc_conference_templates/ICML_2019/*.sty $TEXMFHOME/tex/latex/icml_2019/
+
+## Install IEEE template
+RUN mkdir -p $TEXMFHOME/tex/latex/ieee/ && \
+  cp /usr/local/pandoc_conference_templates/IEEEtran/*.cls $TEXMFHOME/tex/latex/ieee/
+
+## Install ACM CCS
+RUN mkdir -p $TEXMFHOME/tex/latex/acmccs/ && \
+    mv /usr/local/acmccs/*.cls $TEXMFHOME/tex/latex/acmccs/
+
 
 RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthesis.tar.gz && \
