@@ -48,6 +48,10 @@ RUN mkdir -p $TEXMFHOME/tex/latex/tikzuml/ && \
     tar xvjf tikzuml-v1.0-2016-03-29.tbz && \
     mv tikzuml-v1.0-2016-03-29/tikz-uml.sty $TEXMFHOME/tex/latex/tikzuml/
 
+## Install NeurIPS template
+RUN mkdir -p $TEXMFHOME/tex/latex/neurips_2018/ && \
+    mv /usr/local/pandoc_conference_templates/NeurIPS_2018/*.sty $TEXMFHOME/tex/latex/neurips_2018/
+
 RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthesis.tar.gz && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthsym.tar.gz && \

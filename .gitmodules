@@ -10,3 +10,6 @@
 [submodule "styles"]
 	path = styles
 	url = https://github.com/citation-style-language/styles.git
+[submodule "pandoc_conference_templates"]
+	path = pandoc_conference_templates
+	url = https://github.com/martisak/pandoc_conference_templates.git
