@@ -52,6 +52,10 @@ RUN mkdir -p $TEXMFHOME/tex/latex/tikzuml/ && \
 RUN mkdir -p $TEXMFHOME/tex/latex/neurips_2018/ && \
     mv /usr/local/pandoc_conference_templates/NeurIPS_2018/*.sty $TEXMFHOME/tex/latex/neurips_2018/
 
+## Install ICML template
+RUN mkdir -p $TEXMFHOME/tex/latex/icml_2019/ && \
+    mv /usr/local/pandoc_conference_templates/ICML_2019/*.sty $TEXMFHOME/tex/latex/icml_2019/
+
 RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthesis.tar.gz && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthsym.tar.gz && \
