@@ -14,6 +14,7 @@ RUN apt-get update && \
         ttf-adf-gillius \
         fonts-linuxlibertine \
         tex-gyre \
+        tree \
         plantuml \
         python-pip && \
     add-apt-repository multiverse && \
