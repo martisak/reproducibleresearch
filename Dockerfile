@@ -12,6 +12,7 @@ RUN apt-get update && \
         texlive-science \
         texlive-lang-european \
         ttf-adf-gillius \
+        latexmk \
         fonts-linuxlibertine \
         tex-gyre \
         tree \
