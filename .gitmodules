@@ -13,6 +13,3 @@
 [submodule "pandoc_conference_templates"]
 	path = pandoc_conference_templates
 	url = https://github.com/martisak/pandoc_conference_templates.git
-[submodule "acmccs"]
-	path = acmccs
-	url = https://github.com/acmccs/format
