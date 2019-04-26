@@ -66,8 +66,11 @@ RUN mkdir -p $TEXMFHOME/tex/latex/ieee/ && \
 
 ## Install ACM CCS
 RUN mkdir -p $TEXMFHOME/tex/latex/acmccs/ && \
-    mv /usr/local/acmccs/*.cls $TEXMFHOME/tex/latex/acmccs/
+    wget https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-master.zip && \
+    unzip -d $TEXMFHOME/tex/latex/acmccs/ acmart-master.zip
 
+#RUN mkdir -p $TEXMFHOME/tex/latex/acmccs/ && \
+#    mv /usr/local/acmccs/*.cls $TEXMFHOME/tex/latex/acmccs/
 
 RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
 	wget http://web.student.chalmers.se/~k02hajo/public/Latex/Manualer/KTH%20thesis/kthesis.tar.gz && \
