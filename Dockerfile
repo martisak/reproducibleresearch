@@ -39,7 +39,8 @@ RUN pip install pandoc-xnos \
         pandoc-shortcaption \
         iplantuml \
         matplotlib \
-        pweave==0.25
+        pweave==0.25 \
+        pandoc-include
 
 COPY . /usr/local/
 
