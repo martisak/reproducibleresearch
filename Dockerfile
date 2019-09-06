@@ -82,3 +82,6 @@ RUN mkdir -p $TEXMFHOME/tex/latex/kth/ && \
   	wget https://github.com/karlkurzer/path_planner_tex/raw/master/kth_logo.pdf -P $TEXMFHOME/tex/generic/kthsym
 
 COPY kthcolors/lib/kthcolors.sty $TEXMFHOME/tex/latex/kth/
+
+RUN wget https://github.com/sylvainhalle/textidote/releases/download/v0.8.1/textidote_0.8.1_all.deb && \
+    apt-get install ./textidote_0.8.1_all.deb
